@@ -25,3 +25,11 @@ jobs:
           run: |
             echo "Versao atual:"
             node --version
+        - name: "Upgrade Node"
+          uses: actions/setup-node@v4
+          with:
+            node-version: "20.13.1"
+        - name: "Check Node Version After Action"
+          run: |
+            echo "Versao após action:"
+            node --version
