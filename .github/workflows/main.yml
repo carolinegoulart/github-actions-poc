@@ -17,3 +17,11 @@ jobs:
         run: |
           echo "Congratulations!"
           echo "You have created a new workflow."
+  node-version:
+      name: "Print Node Version"
+      runs-on: ubuntu-latest
+      steps:
+        - name: "Check Node Version"
+          run: |
+            echo "Versao atual:"
+            node --version
