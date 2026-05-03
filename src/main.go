@@ -18,6 +18,6 @@ func index(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", index)
 	addr := fmt.Sprintf("0.0.0.0:%d", port)
-	log.Printf("Go app running on: %s\n", addr)
+	log.Printf("Go app version 0.2 running on: %s\n", addr)
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
